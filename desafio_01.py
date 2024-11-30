@@ -1,0 +1,13 @@
+# Cálculo do Salário
+valor = float(input("informe o valor de sua hora de trabalho: "))
+qtd = int(input("informe o número de horas trabalhadas no mês: "))
+sb = (valor * qtd)
+irrf = (sb * 0.11)
+inss = (sb * 0.08)
+sindicato = (sb * 0.05)
+sl = (sb-irrf-inss-sindicato)
+print(f"Seu salário bruto é de R$ {sb:.2f} ")
+print(f"Você pagou R$ {irrf:.2f} de IRRF ")
+print(F"Você pagou R$ {inss:.2f} de INSS ")
+print(F"Você pagou R$ {sindicato:.2f} de imposto sindical ")
+print(f"Seu salário líquido é de R$ {sl:.2f}")
